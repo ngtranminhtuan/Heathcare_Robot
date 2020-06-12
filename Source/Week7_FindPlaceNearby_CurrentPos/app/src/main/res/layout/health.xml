@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:background="#ff0000"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/btnHeart"
+                android:layout_gravity="center_horizontal"
+                android:text="Hãy theo dõi nhịp tim của bạn thường xuyên"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:background="#9999ff"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/btnRun"
+                android:layout_gravity="center_horizontal"
+                android:text="Hôm nay bạn chưa chạy bộ, hãy chạy bộ 10000 bước mỗi ngày để có sức khỏe tốt"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartRun"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+
+            android:background="@drawable/foodback">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btnFood"
+                android:layout_gravity="center_horizontal"
+                android:text="Hôm nay ăn gì"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:alpha="0.9"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Bạn nên ăn thêm nhiều cá, giúp cung cấp thêm chất đạm cho cơ thể"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:alpha="0.9"
+                android:id="@+id/food_advice"
+                android:background="#ffffff" />
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chartFood"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:id="@+id/weather"
+            android:background="@drawable/sunny"
+           >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Thời tiết hôm nay"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:alpha="0.7"/>
+            <TextView
+                android:id="@+id/weatherAdvice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Kiểm tra kết nối mạng"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:alpha="0.7"
+                android:background="#ffffff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP. Hồ Chí Minh"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:paddingTop="20dp"
+                   >
+                    <TextView
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No data"
+                        android:textSize="22dp"
+                        android:id="@+id/cond"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No data"
+                        android:id="@+id/temp"
+                        android:textSize="22dp"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

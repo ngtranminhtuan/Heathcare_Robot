@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layout">
+    <LinearLayout android:id="@+id/top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#ff0000">
+        <TextView android:id="@+id/text1"
+            android:text="Đặt ngón tay của bạn lên camera cho đến khi nghe thấy tiếng bíp và giữ nguyên trong 10 giây"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff">
+        </TextView>
+        <TextView android:id="@+id/text"
+            android:text="Đang đo..."
+            android:textSize="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff">
+        </TextView>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.example.tuantu.week7_findplacenearby.HeartbeatView
+                android:id="@+id/image"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.example.tuantu.week7_findplacenearby.HeartbeatView>
+        </RelativeLayout>
+    </LinearLayout>
+    <SurfaceView android:id="@+id/preview"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        >
+    </SurfaceView>
+</LinearLayout>

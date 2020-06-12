@@ -1,0 +1,19 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=18:2A:BB:E4:88:91:B3:49:E4:5B:05:9E:73:09:83:45:5B:52:CD:1E%3Bcom.example.tuantu.week7_findplacenearby
+
+    You can also add your credentials to an existing key, using this line:
+    18:2A:BB:E4:88:91:B3:49:E4:5B:05:9E:73:09:83:45:5B:52:CD:1E;com.example.tuantu.week7_findplacenearby
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBHfDnaWtEfXJVVp-okrCzU0kv7xGZzkVc</string>
+</resources>

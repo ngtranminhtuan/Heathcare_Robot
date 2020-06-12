@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Nâng cao"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#0a647b"
+        android:textColor="#ffffff"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cho phép gửi tin nhắn khẩn cấp"
+            android:id="@+id/is_mess"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nội dung tin nhắn"
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tin nhắn khẩn cấp"
+            android:textSize="16dp"
+            android:background="@drawable/search_panel"
+            android:id="@+id/mess_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách người nhận"
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contact1;contact2;..."
+            android:textSize="16dp"
+            android:background="@drawable/search_panel"
+            android:id="@+id/mess_contact" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lần nhấn nút để gửi tin nhắn"
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:id="@+id/number_mess"
+            android:background="#939393"
+            >
+        </Spinner>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cho phép gọi điện khẩn cấp"
+            android:id="@+id/is_call"
+            android:checked="false" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại cần gọi (Bệnh viện, người thân)..."
+            android:textSize="16dp"
+            android:background="@drawable/search_panel"
+            android:id="@+id/call_number" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lần nhấn nút để gọi điện khẩn cấp"
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+           />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:id="@+id/number_call"
+            android:background="#939393">
+        </Spinner>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff0000"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+               >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/attention"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chú ý (Attention)"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nếu bạn cho phép ứng dụng gửi tin nhắn, gọi điện lúc khẩn cấp. Khi người dùng nhấn liên tục phím nguồn đúng số lần đã định trước, thì ứng dụng sẽ ngay lập tức gửi tin nhắn cấp cứu đến người thân trong danh sách đã lưu ngay cả khi bạn tắt ứng dụng này hoàn toàn"
+                android:textSize="16dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="20dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#6666ff"
+                android:text="Lưu"
+                android:id="@+id/btn_save"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#6666ff"
+                android:text="Hủy"
+                android:id="@+id/btn_cancel"
+                android:textColor="#ffffff"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
