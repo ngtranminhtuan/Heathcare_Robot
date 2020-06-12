@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="lib" path="resources/libraries/sphinx4-core.jar"/>
+	<classpathentry kind="lib" path="resources/libraries/sphinx4-data.jar"/>
+	<classpathentry kind="lib" path="resources/libraries/marytts-builder-5.2-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="resources/libraries/marytts-lang-en-5.2.jar"/>
+	<classpathentry kind="lib" path="resources/libraries/voice-cmu-rms-hsmm-5.2.jar"/>
+	<classpathentry kind="lib" path="resources/libraries/voice-cmu-slt-hsmm-5.2.jar"/>
+	<classpathentry kind="lib" path="resources/libraries/voice-dfki-poppy-hsmm-5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_112/lib/javafx-mx.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

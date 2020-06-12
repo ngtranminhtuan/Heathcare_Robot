@@ -1,0 +1,25 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <feelings>  = ( how are you | say hello);
+public <voices>  = ( voice one  | voice two | voice three );
+public <amazing>  = ( say amazing | how is today );
+public <nervous>  = (who is your daddy | obey to me beach | hey tom | close application);
+public <number> = ( zero | one | two | three | four | five | six | seven | nine | ten
+                   | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen | twenty 
+                   | thirty | forty | fifty | sixty | seventy | eighty | ninety |
+		            hundred | thousand | million | billion)+;                   
+public <syntax> = <number>{1} (plus | minus | multiply | division){1} <number>{1}; 
+
+public <question> = (what is your name | where are you from | where do you come from | what can you do 
+| how old are you | are you human | where are you from | what are you | do you have a sister | are you smart| 
+where do you live | who made you | do you know Siri | can I borrow some money | who is your boss | 
+what is your favourite music | what is your favourite song | are you sleeping | what are you up to | 
+what is your name from | what are you | how do you work | why are you blue | are you real | what are you wearing |
+what do you look like | who is your father | when were you born | when will you die | are you beautiful | 
+are you happy);
