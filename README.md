@@ -8,4 +8,4 @@ This is my final project (7/2017) which included:
   + UI of robot (Android platform)
   
 https://www.keil.com/pack/doc/CMSIS/DSP/html/group__PID.html
-https://www.youtube.com/watch?v=RG6VcfTZewo&t=8s
+# https://www.youtube.com/watch?v=RG6VcfTZewo&t=8s
